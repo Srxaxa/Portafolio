@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO básico -->
+    <meta name="description" content="Desarrollador web frontend especializado en páginas web, landings y ecommerce. Manizales, Colombia.">
+    <meta name="keywords" content="desarrollador web, frontend, páginas web, landing page, ecommerce, Manizales, Colombia">
+    <meta name="author" content="Daniel Aguirre Avilés">
+    
+    <!-- Open Graph — para que se vea bien cuando compartes en redes -->
+    <meta property="og:title" content="Daniel Aguirre — Desarrollador Web">
+    <meta property="og:description" content="Desarrollador web frontend especializado en páginas web, landings y ecommerce.">
+    <meta property="og:type" content="website">
+
+    <!-- instalando gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- links  -->
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/animations.css">
+    
+    <title>Daniel Aguirre — Desarrollador Web</title>
+</head>
+<body>
+    
+    <!-- Logro de bienvenida -->
+    <div class="alerta-logro" id="alerta-logro">
+    <span id="alerta-texto">// Bienvenido a mi portafolio</span>
+    </div>
+    <!-- Navegación -->
+    <nav id="nav">
+        <div class="nav-logo">Daniel Aguirre</div>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero -->
+    <section id="inicio">
+
+    <!-- Caracteres japoneses de fondo -->
+    <div class="hero-bg-texto">
+        <span>開発者</span>
+        <span>技術</span>
+        <span>未来</span>
+        <span>革新</span>
+        <span>東京</span>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="hero-contenido">
+        <p class="hero-disponible">「 Disponible para proyectos 」</p>
+        <h1 class="hero-nombre">
+            <span class="nombre-linea1">Daniel</span>
+            <span class="nombre-linea2">Aguirre</span>
+        </h1>
+        <p class="hero-titulo">Desarrollador Web Frontend</p>
+        <p class="hero-descripcion">
+            Construyo páginas web que convierten<br>
+            visitantes en clientes.
+        </p>
+        <div class="hero-botones">
+            <a href="#proyectos" class="btn-primario">Ver proyectos</a>
+            <a href="#contacto" class="btn-secundario">Hablemos</a>
+        </div>
+    </div>
+
+    <!-- Línea decorativa -->
+    <div class="hero-linea"></div>
+
+</section>
+
+    <!-- Servicios -->
+    <section id="servicios">
+
+    <div class="seccion-header">
+        <p class="seccion-tag">// 01</p>
+        <h2 class="seccion-titulo">Servicios</h2>
+        <p class="seccion-subtitulo">サービス</p>
+    </div>
+
+    <div class="servicios-grid">
+
+        <div class="servicio-card">
+            <span class="servicio-numero">01</span>
+            <h3>Páginas Web</h3>
+            <p>Sitios web modernos, rápidos y optimizados para SEO que generan resultados reales.</p>
+            <span class="servicio-tag">HTML · CSS · JS</span>
+        </div>
+
+        <div class="servicio-card">
+            <span class="servicio-numero">02</span>
+            <h3>Landing Pages</h3>
+            <p>Páginas de aterrizaje diseñadas para convertir visitantes en clientes desde el primer segundo.</p>
+            <span class="servicio-tag">Conversión · SEO</span>
+        </div>
+
+        <div class="servicio-card">
+            <span class="servicio-numero">03</span>
+            <h3>Ecommerce</h3>
+            <p>Tiendas online completas con carrito de compras, pagos y gestión de productos.</p>
+            <span class="servicio-tag">Tiendas · Pagos</span>
+        </div>
+
+        <div class="servicio-card">
+            <span class="servicio-numero">04</span>
+            <h3>Marketing Digital</h3>
+            <p>Estrategias digitales que posicionan tu negocio y atraen clientes de forma orgánica.</p>
+            <span class="servicio-tag">SEO · Redes</span>
+        </div>
+
+    </div>
+
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos">
+
+    <div class="seccion-header">
+        <p class="seccion-tag">// 02</p>
+        <h2 class="seccion-titulo">Proyectos</h2>
+        <p class="seccion-subtitulo">プロジェクト</p>
+    </div>
+
+    <div class="proyectos-grid" id="proyectos-grid">
+        <!-- Se renderizan desde JS -->
+    </div>
+
+</section>
+
+    <!-- Contacto -->
+    <section id="contacto">
+
+    <div class="seccion-header">
+        <p class="seccion-tag">// 03</p>
+        <h2 class="seccion-titulo">Contacto</h2>
+        <p class="seccion-subtitulo">お問い合わせ</p>
+    </div>
+
+    <div class="contacto-contenido">
+
+        <div class="contacto-info">
+            <p class="contacto-frase">
+                ¿Tienes un proyecto en mente?<br>
+                <span>Hagámoslo realidad.</span>
+            </p>
+            <div class="contacto-datos">
+                <a href="mailto:tu@email.com" class="contacto-item">
+                    <span class="contacto-label">Email</span>
+                    <span class="contacto-valor">tu@email.com</span>
+                </a>
+                <a href="https://wa.me/57TUNUMERO" class="contacto-item" target="_blank">
+                    <span class="contacto-label">WhatsApp</span>
+                    <span class="contacto-valor">+57 000 000 0000</span>
+                </a>
+                <a href="https://linkedin.com" class="contacto-item" target="_blank">
+                    <span class="contacto-label">LinkedIn</span>
+                    <span class="contacto-valor">linkedin.com/in/daniel</span>
+                </a>
+            </div>
+        </div>
+
+        <form id="form-contacto" class="contacto-form">
+            <div class="form-grupo">
+                <input type="text" id="contact-nombre" placeholder="Nombre" >
+            </div>
+            <div class="form-grupo">
+                <input type="email" id="contact-email" placeholder="Email" >
+            </div>
+            <div class="form-grupo">
+                <input type="text" id="contact-asunto" placeholder="Asunto">
+            </div>
+            <div class="form-grupo">
+                <textarea id="contact-mensaje" placeholder="Cuéntame sobre tu proyecto..." rows="5" ></textarea>
+            </div>
+            <button type="submit" class="btn-primario">
+                Enviar mensaje →
+            </button>
+            <p id="form-status"></p>
+        </form>
+
+    </div>
+
+</section>
+
+    <!-- Footer -->
+    <footer>
+    <div class="footer-contenido">
+        <div class="footer-logo">
+            <p class="footer-nombre">Daniel Aguirre</p>
+            <p class="footer-japones">開発者</p>
+        </div>
+        <p class="footer-copy">© 2026 Daniel Aguirre — Todos los derechos reservados</p>
+        <div class="footer-links">
+            <a href="#inicio">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+    </div>
+</footer>
+
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>

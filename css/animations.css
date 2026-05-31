@@ -1,0 +1,85 @@
+/* =================== GLITCH =================== */
+.nombre-linea1 {
+    position: relative;
+    animation: glitch 4s infinite;
+}
+
+@keyframes glitch {
+    0%, 90%, 100% {
+        text-shadow: none;
+        transform: translate(0);
+    }
+    92% {
+        text-shadow: -3px 0 var(--rojo);
+        transform: translate(3px);
+    }
+    94% {
+        text-shadow: 3px 0 cyan;
+        transform: translate(-3px);
+    }
+    96% {
+        text-shadow: -3px 0 var(--rojo);
+        transform: translate(3px);
+    }
+    98% {
+        text-shadow: 3px 0 cyan;
+        transform: translate(0);
+    }
+}
+
+/* =================== CURSOR PERSONALIZADO =================== */
+* {
+    cursor: crosshair;
+}
+
+/* =================== LÍNEA ROJA ANIMADA =================== */
+.hero-linea {
+    animation: lineaPulso 2s ease-in-out infinite;
+}
+
+@keyframes lineaPulso {
+    0%, 100% { opacity: 1; height: 80px; }
+    50% { opacity: 0.3; height: 40px; }
+}
+
+/* =================== SCANLINE EFFECT =================== */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 2px,
+        rgba(0, 0, 0, 0.05) 2px,
+        rgba(0, 0, 0, 0.05) 4px
+    );
+    pointer-events: none;
+    z-index: 9999;
+}
+
+/* =================== ALERTA LOGRO =================== */
+.alerta-logro {
+    position: fixed;
+    top: 80px;
+    left: -500px;
+    background: rgba(10, 10, 10, 0.97);
+    color: var(--blanco);
+    padding: 16px 28px;
+    border-left: 4px solid var(--rojo);
+    border-radius: 4px;
+    font-family: var(--fuente-principal);
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+    transition: left 0.5s ease;
+    z-index: 9999;
+    white-space: nowrap;
+}
+
+.alerta-logro.mostrar {
+    left: 20px;
+}
