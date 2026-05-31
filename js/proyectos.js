@@ -1,4 +1,4 @@
-// Datos de tus proyectos
+// Datos de los proyectos
 const proyectos = [
     {
         numero: "01",
